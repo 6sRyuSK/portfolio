@@ -64,7 +64,7 @@ export const generateProject = (): HTMLLIElement[] => {
         imageElm.className = 'project-img'
 
         titleElm.innerHTML = title
-        titleElm.href = url
+        titleElm.href = url || ''
         titleElm.target = '_blank'
         titleElm.className = 'project-title'
 
