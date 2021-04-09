@@ -2,6 +2,7 @@ type project = {
     title: string,
     url: string,
     img: string,
+    category?: string[]
 }
 
 const projects: project[] = [
@@ -9,6 +10,7 @@ const projects: project[] = [
         title: '6synth',
         url: 'https://github.com/6sRyuSK/6synth',
         img: './projectImages/6synth.png',
+        category: ['TypeScript', 'WebAudioAPI']
     }
 ]
 
