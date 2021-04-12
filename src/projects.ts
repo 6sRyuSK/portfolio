@@ -25,8 +25,8 @@ const projects: project[] = [
         category: ['Nuxt.js'],
     },
     {
-        title: 'WebRTC-Streaming (private)',
-        url: 'https://github.com/6sRyuSK/WebRTC-Streaming',
+        title: 'WebRTC-Streaming',
+        url: 'https://6sakaream.netlify.app/',
         img: './projectImages/webrtc-streaming.png',
         category: ['WebRTC', 'skyway.js', 'Svelte'],
     },
