@@ -31,3 +31,15 @@
 .project-title {
     font-size: x-large;
 }
+
+.categories {
+    display: flex;
+    flex-direction: row;
+}
+
+.category {
+    background-color: cadetblue;
+    border-radius: 25px;
+    margin: 5px;
+    padding: 5px;
+}

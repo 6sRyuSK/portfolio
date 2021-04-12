@@ -56,9 +56,11 @@ const projects: project[] = [
 ]
 
 export const generateProject = (): HTMLLIElement[] => {
-    return projects.map(({title, url, img}) => {
+    return projects.map(({title, url, img, category}) => {
         let imageElm = document.createElement('img') as HTMLImageElement
         let titleElm = document.createElement('a')
+        let categoriesElm = document.createElement('div')
+        
 
         imageElm.src = img
         imageElm.className = 'project-img'
@@ -68,11 +70,20 @@ export const generateProject = (): HTMLLIElement[] => {
         titleElm.target = '_blank'
         titleElm.className = 'project-title'
 
+        categoriesElm.className = 'categories'
+        category?.forEach(item => {
+            let categoryElm = document.createElement('p')
+            categoryElm.className = 'category'
+            categoryElm.innerText = item
+            categoriesElm.appendChild(categoryElm)
+        })
+
         let projectElm = document.createElement('li') as HTMLLIElement
 
         projectElm.className = 'project'
         projectElm.appendChild(imageElm)
         projectElm.appendChild(titleElm)
+        projectElm.appendChild(categoriesElm)
 
         return projectElm
     })
